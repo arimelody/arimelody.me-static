@@ -1,0 +1,288 @@
+:root {
+        --primary: #b7fd49;
+        --secondary: #f8e05b;
+        --tertiary: #f788fe;
+}
+
+body {
+        margin: 0;
+	padding: 0;
+        background: #111;
+        color: #eee;
+        font-family: monospace;
+        font-size: 18px;
+	text-shadow: 0 0 3em, 0 0 0.2em;
+}
+
+header {
+	border-bottom: 1px solid #888;
+}
+
+#header {
+	width: min(calc(100% - 4rem), 720px);
+	height: 3em;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	padding: 0 1em;
+}
+
+img#header-icon {
+	width: 2em;
+	height: 2em;
+	margin: .5em;
+	display: block;
+}
+
+#header-text {
+	width: 11em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#header-text h1 {
+	margin: 0;
+	font-size: 1em;
+}
+
+#header-text h2 {
+	height: 1.2em;
+	line-height: 1.2em;
+	margin: 0;
+	font-size: .8em;
+	color: #bbb;
+}
+
+header ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	gap: .5em;
+	/* overflow-x: scroll; */
+	align-items: center;
+}
+
+header ul li {
+	list-style: none;
+}
+
+header ul li a {
+	padding: .2em .5em;
+	border: 1px solid #65b4fd;
+	color: #65b4fd;
+	border-radius: 2px;
+	background-color: transparent;
+	transition-property: color, border-color, background-color;
+	transition-duration: .2s;
+	animation: list-item-fadein .2s forwards;
+	animation-delay: 0s;
+	opacity: 0;
+}
+
+header ul li a.inactive {
+	color: #aaa;
+	border-color: #aaa;
+	cursor: default;
+	text-decoration: none !important;
+}
+
+header ul li a:not(.inactive):hover {
+	color: #eee;
+	border-color: #eee;
+	background-color: #65b4fd;
+	text-decoration: none;
+}
+
+main {
+	width: 	min(calc(100% - 4rem), 720px);
+	margin: auto;
+}
+
+main h1 {
+	line-height: 3rem;
+        color: var(--primary);
+}
+
+main h2 {
+        color: var(--secondary);
+}
+
+main h3 {
+        color: var(--tertiary);
+}
+
+a {
+        color: #65b4fd;
+        text-decoration: none;
+}
+
+a:hover {
+        text-decoration: underline;
+}
+
+small {
+	font-size: 1em;
+	color: #aaa;
+}
+
+span.newchar {
+        animation: newchar 0.25s;
+}
+
+@keyframes newchar {
+        from {
+                background: #fff8;
+        }
+}
+
+span.hide {
+        display: none;
+}
+
+h1:hover span.hide {
+        display: initial;
+        opacity: 0.1;
+}
+
+div#me_irl {
+        width: fit-content;
+        height: fit-content;
+        border: 2px solid white;
+}
+
+div#me_irl img {
+        display: block;https://discord.gg/PSyTZDt
+}
+
+div#me_irl::before {
+        content: "";
+        position: absolute;
+        width: 104px;
+        height: 104px;
+        transform: translate(2px, 2px);
+        background-image: linear-gradient(to top right,
+                        var(--primary),
+                        var(--secondary));
+        z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small {
+        transition: background-color 0.1s;
+}
+
+main h1:hover,
+main h2:hover,
+main h3:hover,
+main h4:hover,
+main h5:hover,
+main h6:hover,
+main p:hover,
+main small:hover {
+        background-color: #fff2;
+}
+
+hr {
+	text-align: center;
+	line-height: 0px;
+	border-width: 1px 0 0 0;
+	border-color: #888f;
+	margin: 1.5em 0;
+	overflow: visible;
+}
+
+ul.links {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+}
+
+ul.links li {
+	list-style: none;
+}
+
+ul.links li a {
+	padding: .2em .5em;
+	border: 1px solid #65b4fd;
+	color: #65b4fd;
+	border-radius: 2px;
+	background-color: transparent;
+	transition-property: color, border-color, background-color;
+	transition-duration: .2s;
+	animation: list-item-fadein .2s forwards;
+	animation-delay: 0s;
+	opacity: 0;
+}
+
+ul.links li a:hover {
+	color: #eee;
+	border-color: #eee;
+	background-color: #65b4fd;
+	text-decoration: none;
+	box-shadow: 0 0 1em #65b4fd;
+}
+
+@keyframes list-item-fadein {
+	from {
+		opacity: 1;
+                background: #fff8;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+footer {
+	margin: 2rem;
+        color: #aaa;
+}
+
+@keyframes overlay-flicker {
+	from {
+		opacity: .5;
+	}
+	to {
+		opacity: .6;
+	}
+}
+
+@keyframes overlay-scroll {
+	from {
+		background-position-y: 0;
+	}
+	to {
+		background-position-y: .2em;
+	}
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(180deg, rgba(0,0,0,0) 15%, rgb(0, 0, 0) 40%, rgb(0, 0, 0) 60%, rgba(0,0,0,0) 85%);
+	background-size: 100vw .2em;
+	background-repeat: repeat;
+	opacity: .5;
+	pointer-events: none;
+	animation: linear .05s infinite alternate overlay-flicker;
+	mix-blend-mode: overlay;
+}
+
+@media screen and (max-width: 520px) {
+	#header-text {
+		display: none;
+	}
+}
+

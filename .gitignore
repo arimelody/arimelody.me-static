@@ -1,0 +1,3 @@
+certs/
+docker-compose*.yml
+!docker-compose-example.yml
