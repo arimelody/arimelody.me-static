@@ -2,8 +2,8 @@ version: '3.9'
 services:
   web:
     build: .
-    image: arimelody-home
-    container_name: arimelody-home
+    image: arimelody
+    container_name: arimelody
     ports:
       - 443:443
     volumes:
