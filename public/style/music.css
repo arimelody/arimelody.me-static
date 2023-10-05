@@ -1,0 +1,79 @@
+article.music {
+	margin-bottom: 1rem;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	gap: 1.5em;
+	border-radius: 4px;
+	background-color: #ffffff04;
+	transition: background-color .1s;
+}
+
+article.music:hover {
+	background-color: #fff1;
+}
+
+.music h1:hover,
+.music h2:hover {
+	background: initial;
+}
+
+.music-artwork img {
+	border: 1px solid #888;
+}
+
+.music-title {
+	margin: 0;
+	color: #eee;
+}
+
+.music-year {
+	color: #888;
+}
+
+.music-artist {
+	margin: -.5rem 0 0 0;
+	font-size: 1em;
+	color: #aaa;
+}
+
+.music-links {
+	margin: .5em 0;
+	padding: 0;
+	display: flex;
+	gap: .5rem;
+	flex-wrap: wrap;
+}
+
+.music-links li {
+	list-style: none;
+}
+
+.music-links li a {
+	padding: .2em .5em;
+	border: 1px solid #65b4fd;
+	color: #65b4fd;
+	border-radius: 2px;
+	background-color: transparent;
+	transition-property: color, border-color, background-color;
+	transition-duration: .2s;
+	animation: list-item-fadein .2s forwards;
+	animation-delay: 0s;
+	opacity: 0;
+}
+
+
+.music-links li a:hover {
+	color: #eee;
+	border-color: #eee;
+	background-color: #65b4fd;
+	text-decoration: none;
+}
+
+.collapse {
+	margin-bottom: 1em;
+	padding: .5em 1.5em;
+	background-color: #ffffff04;
+	border-radius: 4px;
+}
+

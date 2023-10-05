@@ -98,6 +98,7 @@ header ul li a:not(.inactive):hover {
 
 main {
 	width: 	min(calc(100% - 4rem), 720px);
+	min-height: calc(100vh - 10.3rem);
 	margin: auto;
 }
 
@@ -243,7 +244,13 @@ ul.links li a:hover {
 }
 
 footer {
-	margin: 2rem;
+	border-top: 1px solid #888;
+}
+
+#footer {
+	width: 	min(calc(100% - 4rem), 720px);
+	margin: auto;
+	padding: 2rem 0;
         color: #aaa;
 }
 
