@@ -2,16 +2,18 @@
         --primary: #b7fd49;
         --secondary: #f8e05b;
         --tertiary: #f788fe;
+	--links: #5eb2ff;
 }
 
 body {
-        margin: 0;
+	margin: 0;
 	padding: 0;
-        background: #111;
-        color: #eee;
-        font-family: monospace;
-        font-size: 18px;
+	background: #111;
+	color: #eee;
+	font-family: monospace;
+	font-size: 18px;
 	text-shadow: 0 0 2em;
+	scroll-behavior: smooth;
 }
 
 header {
@@ -69,10 +71,11 @@ header ul li {
 	list-style: none;
 }
 
-header ul li a {
+header ul li a,
+header ul li span {
 	padding: .2em .5em;
-	border: 1px solid #65b4fd;
-	color: #65b4fd;
+	border: 1px solid var(--links);
+	color: var(--links);
 	border-radius: 2px;
 	background-color: transparent;
 	transition-property: color, border-color, background-color;
@@ -82,17 +85,17 @@ header ul li a {
 	opacity: 0;
 }
 
-header ul li a.inactive {
+header ul li span {
 	color: #aaa;
 	border-color: #aaa;
 	cursor: default;
 	text-decoration: none !important;
 }
 
-header ul li a:not(.inactive):hover {
+header ul li a:hover {
 	color: #eee;
 	border-color: #eee;
-	background-color: #65b4fd;
+	background-color: var(--links);
 	text-decoration: none;
 }
 
@@ -116,7 +119,7 @@ main h3 {
 }
 
 a {
-        color: #65b4fd;
+        color: var(--links);
         text-decoration: none;
 }
 
@@ -177,7 +180,8 @@ h4,
 h5,
 h6,
 p,
-small {
+small,
+blockquote {
         transition: background-color 0.1s;
 }
 
@@ -188,8 +192,15 @@ main h4:hover,
 main h5:hover,
 main h6:hover,
 main p:hover,
-main small:hover {
+main small:hover,
+main blockquote:hover {
         background-color: #fff2;
+}
+
+blockquote {
+	margin: 1rem 0;
+	padding: 0 2.5rem;
+	cursor: pointer;
 }
 
 hr {
@@ -213,8 +224,8 @@ ul.links li {
 
 ul.links li a {
 	padding: .2em .5em;
-	border: 1px solid #65b4fd;
-	color: #65b4fd;
+	border: 1px solid var(--links);
+	color: var(--links);
 	border-radius: 2px;
 	background-color: transparent;
 	transition-property: color, border-color, background-color;
@@ -227,9 +238,9 @@ ul.links li a {
 ul.links li a:hover {
 	color: #eee;
 	border-color: #eee;
-	background-color: #65b4fd;
+	background-color: var(--links);
 	text-decoration: none;
-	box-shadow: 0 0 1em #65b4fd;
+	box-shadow: 0 0 1em var(--links);
 }
 
 @keyframes list-item-fadein {

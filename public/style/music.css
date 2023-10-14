@@ -1,4 +1,4 @@
-article.music {
+a.music {
 	margin-bottom: 1rem;
 	padding: 1.5rem;
 	display: flex;
@@ -7,14 +7,16 @@ article.music {
 	border-radius: 4px;
 	background-color: #ffffff04;
 	transition: background-color .1s;
+	text-decoration: none;
 }
 
-article.music:hover {
+a.music:hover {
 	background-color: #fff1;
 }
 
 .music h1:hover,
-.music h2:hover {
+.music h2:hover,
+.music h3:hover {
 	background: initial;
 }
 
@@ -35,6 +37,32 @@ article.music:hover {
 	margin: -.5rem 0 0 0;
 	font-size: 1em;
 	color: #aaa;
+}
+
+h3[class^=music-type] {
+	margin: 0 0 1rem 0;
+	font-size: .8em;
+	color: #eee;
+}
+
+h3.music-type-single {
+    color: var(--tertiary);
+}
+
+h3.music-type-ep {
+    color: var(--secondary);
+}
+
+h3.music-type-album {
+    color: var(--primary);
+}
+
+h3.music-type-comp {
+    color: var(--secondary);
+}
+
+h3.music-type-upcoming {
+    color: #f47070;
 }
 
 .music-links {
@@ -70,8 +98,16 @@ article.music:hover {
 	text-decoration: none;
 }
 
+h2.question {
+	margin: 1rem 0;
+	padding: 1rem 1.5rem;
+	background-color: #ffffff04;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
 .collapse {
-	margin-bottom: 1em;
+	margin: -1rem 0 1rem 0;
 	padding: .5em 1.5em;
 	background-color: #ffffff04;
 	border-radius: 4px;
