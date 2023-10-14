@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 .forEach((e) => {
                         fill_list(e);
                 });
+	setTimeout(() => {
+		document.querySelector("footer").style.display = "none";
+		document.querySelector("footer").style.display = null;
+	}, 1000);
 });
 
 function type_out(e) {
