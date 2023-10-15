@@ -66,11 +66,14 @@ h3.music-type-upcoming {
 }
 
 .music-links {
+	width: fit-content;
 	margin: .5em 0;
 	padding: 0;
 	display: flex;
 	gap: .5rem;
 	flex-wrap: wrap;
+	line-height: 1.7em;
+	justify-content: center;
 }
 
 .music-links li {
@@ -111,5 +114,19 @@ h2.question {
 	padding: .5em 1.5em;
 	background-color: #ffffff04;
 	border-radius: 4px;
+}
+
+@media screen and (max-width: 520px) {
+	a.music {
+		flex-direction: column;
+	}
+
+	.music-artwork,
+	.music-details {
+		text-align: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
 }
 
