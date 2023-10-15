@@ -80,8 +80,8 @@ header ul li span {
 	background-color: transparent;
 	transition-property: color, border-color, background-color;
 	transition-duration: .2s;
-	animation: list-item-fadein .2s forwards;
 	animation-delay: 0s;
+	animation: list-item-fadein .2s forwards;
 	opacity: 0;
 }
 
@@ -95,7 +95,7 @@ header ul li span {
 header ul li a:hover {
 	color: #eee;
 	border-color: #eee;
-	background-color: var(--links);
+	background-color: var(--links) !important;
 	text-decoration: none;
 }
 
@@ -230,15 +230,15 @@ ul.links li a {
 	background-color: transparent;
 	transition-property: color, border-color, background-color;
 	transition-duration: .2s;
-	animation: list-item-fadein .2s forwards;
 	animation-delay: 0s;
+	animation: list-item-fadein .2s forwards;
 	opacity: 0;
 }
 
 ul.links li a:hover {
 	color: #eee;
 	border-color: #eee;
-	background-color: var(--links);
+	background-color: var(--links) !important;
 	text-decoration: none;
 	box-shadow: 0 0 1em var(--links);
 }
@@ -251,6 +251,7 @@ ul.links li a:hover {
 
 	to {
 		opacity: 1;
+		background: transparent;
 	}
 }
 

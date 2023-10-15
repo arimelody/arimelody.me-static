@@ -94,7 +94,7 @@ h3.music-type-upcoming {
 .music-links li a:hover {
 	color: #eee;
 	border-color: #eee;
-	background-color: #65b4fd;
+	background-color: var(--links) !important;
 	text-decoration: none;
 }
 
