@@ -48,7 +48,7 @@ function type_out(e) {
 }
 
 function fill_list(list) {
-	const items = list.querySelectorAll("li a");
+	const items = list.querySelectorAll("li a, li span");
 	items.innerText = "";
 	const delay = 100;
 
