@@ -1,4 +1,4 @@
-const accessibility = JSON.parse(localStorage.getItem("accessibility"));
+const accessibility = JSON.parse(localStorage.getItem("accessibility")) || {};
 
 function toggle_accessibility_setting(name) {
 	if (accessibility[name]) {
