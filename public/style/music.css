@@ -116,7 +116,7 @@ h2.question {
 	border-radius: 4px;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 740px) {
 	a.music {
 		flex-direction: column;
 	}

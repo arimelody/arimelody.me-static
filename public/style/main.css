@@ -28,7 +28,6 @@ header {
 	flex-direction: row;
 	gap: 1em;
 	padding: 0 1em;
-	overflow-x: scroll;
 }
 
 img#header-icon {
@@ -317,7 +316,7 @@ footer {
 	mix-blend-mode: overlay;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 740px) {
 	body {
 		font-size: 14px;
 	}
