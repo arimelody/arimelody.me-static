@@ -8,7 +8,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #111;
+	background: #080808;
 	color: #eee;
 	font-family: monospace;
 	font-size: 18px;
@@ -312,7 +312,7 @@ footer {
 	background-repeat: repeat;
 	opacity: .5;
 	pointer-events: none;
-	animation: linear .05s infinite alternate overlay-flicker;
+	/* animation: linear .05s infinite alternate overlay-flicker; */
 	mix-blend-mode: overlay;
 }
 
