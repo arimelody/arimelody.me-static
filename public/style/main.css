@@ -285,6 +285,11 @@ div#web-buttons {
 	image-rendering: pixelated;
 }
 
+#web-buttons img:hover {
+	margin: -1px;
+	border: 1px solid #eee;
+}
+
 footer {
 	border-top: 1px solid #888;
 }
