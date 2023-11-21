@@ -8,7 +8,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #111;
+	background: #080808;
 	color: #eee;
 	font-family: monospace;
 	font-size: 18px;
@@ -80,8 +80,8 @@ header ul li span {
 	background-color: transparent;
 	transition-property: color, border-color, background-color;
 	transition-duration: .2s;
-	animation: list-item-fadein .2s forwards;
 	animation-delay: 0s;
+	animation: list-item-fadein .2s forwards;
 	opacity: 0;
 }
 
@@ -89,14 +89,30 @@ header ul li span {
 	color: #aaa;
 	border-color: #aaa;
 	cursor: default;
-	text-decoration: none !important;
+	text-decoration: none;
 }
 
 header ul li a:hover {
 	color: #eee;
 	border-color: #eee;
-	background-color: var(--links);
+	background-color: var(--links) !important;
 	text-decoration: none;
+}
+
+
+#toggle-crt a {
+	color: var(--primary);
+	border-color: var(--primary);
+	opacity: 1;
+}
+
+#toggle-crt a:hover {
+	color: #111;
+	background-color: var(--primary) !important;
+}
+
+#toggle-crt.disabled a {
+	opacity: .5 !important;
 }
 
 main {
@@ -158,7 +174,7 @@ div#me_irl {
 }
 
 div#me_irl img {
-        display: block;https://discord.gg/PSyTZDt
+        display: block;
 }
 
 div#me_irl::before {
@@ -230,15 +246,15 @@ ul.links li a {
 	background-color: transparent;
 	transition-property: color, border-color, background-color;
 	transition-duration: .2s;
-	animation: list-item-fadein .2s forwards;
 	animation-delay: 0s;
+	animation: list-item-fadein .2s forwards;
 	opacity: 0;
 }
 
 ul.links li a:hover {
 	color: #eee;
 	border-color: #eee;
-	background-color: var(--links);
+	background-color: var(--links) !important;
 	text-decoration: none;
 	box-shadow: 0 0 1em var(--links);
 }
@@ -251,7 +267,22 @@ ul.links li a:hover {
 
 	to {
 		opacity: 1;
+		background: transparent;
 	}
+}
+
+div#web-buttons {
+	margin: 2rem 0;
+}
+
+#web-buttons a {
+	text-decoration: none;
+}
+
+#web-buttons img {
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 }
 
 footer {
@@ -294,11 +325,15 @@ footer {
 	background-repeat: repeat;
 	opacity: .5;
 	pointer-events: none;
-	animation: linear .05s infinite alternate overlay-flicker;
+	/* animation: linear .05s infinite alternate overlay-flicker; */
 	mix-blend-mode: overlay;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 740px) {
+	body {
+		font-size: 14px;
+	}
+
 	#header-text {
 		display: none;
 	}

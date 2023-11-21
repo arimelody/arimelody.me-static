@@ -4,8 +4,9 @@ a.music {
 	display: flex;
 	flex-direction: row;
 	gap: 1.5em;
+	border: 1px solid #222;
 	border-radius: 4px;
-	background-color: #ffffff04;
+	background-color: #ffffff08;
 	transition: background-color .1s;
 	text-decoration: none;
 }
@@ -66,11 +67,14 @@ h3.music-type-upcoming {
 }
 
 .music-links {
+	width: fit-content;
 	margin: .5em 0;
 	padding: 0;
 	display: flex;
 	gap: .5rem;
 	flex-wrap: wrap;
+	line-height: 1.7em;
+	justify-content: center;
 }
 
 .music-links li {
@@ -94,14 +98,13 @@ h3.music-type-upcoming {
 .music-links li a:hover {
 	color: #eee;
 	border-color: #eee;
-	background-color: #65b4fd;
+	background-color: var(--links) !important;
 	text-decoration: none;
 }
 
 h2.question {
 	margin: 1rem 0;
 	padding: 1rem 1.5rem;
-	background-color: #ffffff04;
 	border-radius: 4px;
 	cursor: pointer;
 }
@@ -109,7 +112,20 @@ h2.question {
 .collapse {
 	margin: -1rem 0 1rem 0;
 	padding: .5em 1.5em;
-	background-color: #ffffff04;
 	border-radius: 4px;
+}
+
+@media screen and (max-width: 740px) {
+	a.music {
+		flex-direction: column;
+	}
+
+	.music-artwork,
+	.music-details {
+		text-align: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
 }
 
