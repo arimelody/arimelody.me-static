@@ -271,6 +271,20 @@ ul.links li a:hover {
 	}
 }
 
+div#web-buttons {
+	margin: 2rem 0;
+}
+
+#web-buttons a {
+	text-decoration: none;
+}
+
+#web-buttons img {
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+
 footer {
 	border-top: 1px solid #888;
 }
