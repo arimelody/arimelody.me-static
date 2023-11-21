@@ -89,7 +89,7 @@ header ul li span {
 	color: #aaa;
 	border-color: #aaa;
 	cursor: default;
-	text-decoration: none !important;
+	text-decoration: none;
 }
 
 header ul li a:hover {
@@ -99,21 +99,20 @@ header ul li a:hover {
 	text-decoration: none;
 }
 
-#toggle-crt {
-	margin-top: 4px;
-	padding: 4px;
-	fill: var(--links);
-	cursor: pointer;
-	transition: fill .1s, opacity .1s;
-	opacity: .5;
-}
 
-#toggle-crt:hover {
-	fill: #eee;
-}
-
-#toggle-crt.active {
+#toggle-crt a {
+	color: var(--primary);
+	border-color: var(--primary);
 	opacity: 1;
+}
+
+#toggle-crt a:hover {
+	color: #111;
+	background-color: var(--primary) !important;
+}
+
+#toggle-crt.disabled a {
+	opacity: .5 !important;
 }
 
 main {
