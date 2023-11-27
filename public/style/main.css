@@ -5,6 +5,18 @@
 	--links: #5eb2ff;
 }
 
+.col-primary {
+	color: var(--primary);
+}
+
+.col-secondary {
+	color: var(--secondary);
+}
+
+.col-tertiary {
+	color: var(--tertiary);
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -12,7 +24,7 @@ body {
 	color: #eee;
 	font-family: monospace;
 	font-size: 18px;
-	text-shadow: 0 0 2em;
+	text-shadow: 0 0 3em;
 	scroll-behavior: smooth;
 }
 
@@ -201,6 +213,24 @@ blockquote {
         transition: background-color 0.1s;
 }
 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+	text-decoration: none;
+}
+
 main h1:hover,
 main h2:hover,
 main h3:hover,
@@ -210,13 +240,12 @@ main h6:hover,
 main p:hover,
 main small:hover,
 main blockquote:hover {
-        background-color: #fff2;
+        background-color: #fff1;
 }
 
 blockquote {
 	margin: 1rem 0;
 	padding: 0 2.5rem;
-	cursor: pointer;
 }
 
 hr {

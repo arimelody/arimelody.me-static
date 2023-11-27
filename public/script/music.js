@@ -31,15 +31,6 @@ document.querySelectorAll("h2.question").forEach(element => {
 	};
 });
 
-document.querySelectorAll('blockquote').forEach(
-  element => {
-    element.onclick = (e) => {
-      navigator.clipboard.writeText(e.target.innerText);
-      console.log('copied quote contents to clipboard!\n\n' + e.target.innerText);
-    }
-  }
-);
-
 fetch('/music.json')
 	.then(res => {
 		if (!res.ok) {
@@ -55,5 +46,3 @@ fetch('/music.json')
 			music_container.append(dom);
 		};
 	});
-
-
