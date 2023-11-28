@@ -1,3 +1,6 @@
+const header_links = document.getElementById("header-links");
+const hamburger = document.getElementById("header-links-toggle");
+
 function type_out(e) {
         const text = e.innerText;
         const original = e.innerHTML;
@@ -52,3 +55,12 @@ function fill_list(list) {
 		fill_list(e);
 	});
 
+function toggle_header_links() {
+        header_links.classList.toggle("open");
+}
+
+document.addEventListener("click", event => {
+        if (!header_links.contains(event.target) && !hamburger.contains(event.target)) {
+                header_links.classList.remove("open");
+        }
+});
