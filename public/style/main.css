@@ -329,6 +329,8 @@ div#web-buttons {
 #web-buttons img:hover {
 	margin: -1px;
 	border: 1px solid #eee;
+	transform: translate(-2px, -2px);
+	box-shadow: 1px 1px 0 #eee, 2px 2px 0 #eee;
 }
 
 footer {
