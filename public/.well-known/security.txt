@@ -1,0 +1,11 @@
+# thanks for the tip! ^_~
+Contact: mailto:ari@arimelody.me
+
+# five years from the date of creation, for good measure!
+Expires: 2028-12-03T12:00:00.000Z
+
+# please use pgp encryption for anything you don't want in plain-text!
+Encryption: https://www.arimelody.me/keys/ari%20melody_0x92678188_public.asc
+
+# i usually speak english, and not much else!
+Preferred-Languages: en
