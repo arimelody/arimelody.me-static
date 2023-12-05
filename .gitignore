@@ -2,3 +2,4 @@ certs/
 public/img/musicart/*
 docker-compose*.yml
 !docker-compose-example.yml
+**/.DS_Store
