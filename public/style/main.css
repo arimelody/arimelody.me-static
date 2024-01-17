@@ -38,7 +38,7 @@ header {
 	z-index: 1;
 }
 
-#header {
+nav {
 	width: min(calc(100% - 4rem), 720px);
 	height: 3em;
 	margin: auto;
@@ -391,7 +391,7 @@ footer {
 		font-size: 14px;
 	}
 
-	div#header {
+	nav {
 		width: calc(100vw - 2rem);
 		margin: 0;
 	}
