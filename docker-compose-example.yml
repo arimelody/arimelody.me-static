@@ -5,8 +5,5 @@ services:
     image: arimelody
     container_name: arimelody
     ports:
-      - 443:443
-    volumes:
-      - ./certs/arimelody.crt:/etc/nginx/ssl/arimelody.crt
-      - ./certs/arimelody.key:/etc/nginx/ssl/arimelody.key
+      - 80:80
     restart: unless-stopped
