@@ -2,7 +2,7 @@ version: '3.9'
 services:
   web:
     build: .
-    image: arimelody
+    image: docker.arimelody.me/arimelody
     container_name: arimelody
     ports:
       - 80:80
