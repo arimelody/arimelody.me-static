@@ -1,3 +1,5 @@
+(this repo has been archived in favour of my local repo: https://git.arimelody.me/ari/arimelody.me)
+
 # arimelody.me
 home to your local SPACEGIRL 💫
 
